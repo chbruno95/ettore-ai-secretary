@@ -1,11 +1,10 @@
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
-import { cookies } from "next/headers"
+import { createServerClient } from "@/lib/supabase/server"
 import { redirect } from "next/navigation"
 import { DraftsList } from "@/components/drafts-list"
 import { DraftGenerator } from "@/components/draft-generator"
 
 export default async function DraftsPage() {
-  const supabase = createServerComponentClient({ cookies })
+  const supabase = createServerClient()
 
   const {
     data: { session },
