@@ -1,12 +1,14 @@
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: "Ettore - AI Secretary per Wedding Professionals",
+  description:
+    "Segretario AI e mini-CRM per professionisti del settore wedding. Gestisci lead, genera email personalizzate e automatizza il tuo business.",
+  generator: "Ettore AI",
 }
 
 export default function RootLayout({
